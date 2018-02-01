@@ -1,7 +1,18 @@
 html
   head
     title= title
-    link(rel='stylesheet', href='/style.css')
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight")
+    style(type="text/css").
+      body {
+        font-family: 'Zilla Slab Highlight', cursive;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        background: #e3caac;
+      }
+      .main {
+        text-align: center;
+        margin-top: 300px;
+      }
   body
     .main= message

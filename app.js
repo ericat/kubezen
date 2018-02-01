@@ -12,7 +12,6 @@ const options = {
 
 app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'pug');
-app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
