@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/nodemon server.js",
+    "dev": "node_modules/.bin/nodemon server.js",
+    "start": "node server.js",
     "test": "npm test"
   },
   "keywords": [],
