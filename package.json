@@ -6,17 +6,24 @@
   "scripts": {
     "dev": "node_modules/.bin/nodemon server.js",
     "start": "node server.js",
-    "test": "npm test"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "eslint": "^4.17.0",
+    "eslint-config-google": "^0.9.1",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.65.0",
+    "nodemon": "^1.11.0",
+    "prettier": "^1.10.2"
   },
   "dependencies": {
     "express": "^4.15.3",
+    "mocha": "^5.0.0",
     "pug": "^2.0.0-rc.4",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "supertest": "^3.0.0"
   }
 }
