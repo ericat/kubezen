@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: simple-deployment
+  namespace: default
+  labels:
+    k8s-app: simple
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        k8s-app: simple
+    spec:
+      containers:
+        - name: nginx
+          image: quay.io/coreos/example-app:v1.0
+          image: docker.io/ericat/kubezen:latest
+          ports:
+            - name: http
+              containerPort: 80
