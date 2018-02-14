@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: kubezen
+  name: kubezen
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: kubezen
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: kubezen
+    spec:
+      containers:
+      # - image: kubezenimg:latest
+      - image: kubezenimg
+        name: kubezen
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        resources: {}
+status: {}
