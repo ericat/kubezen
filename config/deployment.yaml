@@ -18,8 +18,7 @@ spec:
         run: kubezen
     spec:
       containers:
-      # - image: kubezenimg:latest
-      - image: kubezenimg
+      - image: ericat/kubezen:1.0.0
         name: kubezen
         imagePullPolicy: IfNotPresent
         ports:
